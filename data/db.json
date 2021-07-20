@@ -6,7 +6,7 @@
         "color":"red",
         "price":"500",
         "stockBalance":20,
-        "vendor":"Красивые труселя",
+        "vendor":"Красный броненосец",
         "title":"OUTSH"
     },
     "S019189R":{
@@ -26,7 +26,7 @@
         "color":"red",
         "price":"500",
         "stockBalance":5,
-        "vendor":"Красивые труселя",
+        "vendor":"Комсомольское знамя",
         "title":"OUTSH"
     },
     "S019191B":{
@@ -36,7 +36,7 @@
         "color":"blue",
         "price":"500",
         "stockBalance":15,
-        "vendor":"Красивые труселя",
+        "vendor":"Слава партии",
         "title":"OUTSH"
     },
     "S019192B":{
@@ -46,7 +46,7 @@
         "color":"blue",
         "price":"500",
         "stockBalance":2,
-        "vendor":"Красивые труселя",
+        "vendor":"Гроза капитализма",
         "title":"OUTSH"
     },
     "S019193B":{

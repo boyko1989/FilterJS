@@ -1,0 +1,11 @@
+/* .artikul{
+   
+} */
+.cardGoodItem{
+   padding: 30px;
+   margin: 5px;
+   border: 1px solid #333;
+   border-radius: 5px;
+   float: left;
+}
+

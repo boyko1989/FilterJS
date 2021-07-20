@@ -20,17 +20,19 @@ if (!localStorage.getItem('myGoods')){
 } else {
 
    const myData = JSON.parse(localStorage.getItem('myGoods'));
-   console.log(myData);
 
-   // let arrGoods = [];
+   const cardPlace = document.querySelector('.artikul');
 
    for (let item in myData){
-      console.log(myData[item]);
+      const li = document.createElement('li');
+      li.classList.add('cardGoodItem');
+      li.innerHTML = `
+      
+         <h5>Продукция фабрики</h5><p>${myData[item].vendor}</p>
+         
+         `;
+      cardPlace.append(li);
    }
-
-   // console.log(myData.S019188R);
-
-   // const myDataArr = Array.from(myData);
-   //    console.log(myDataArr);
+   console.log(myData);
    
 }
