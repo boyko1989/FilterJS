@@ -128,6 +128,18 @@ p {
    padding: 10px 0px 5px 0px;
 }
 
+ul, ol {
+   margin: 0px 30px;
+   font-family: Arial;
+   font-size: 16px;
+   line-height: 24px;
+   padding: 10px 0px 5px 0px;
+}
+
+li {
+   margin: 0px 0px 10px 0px;
+}
+
 /* Базовая разметка */
 
 .wrapper {
@@ -142,6 +154,7 @@ p {
 }
 
 .header {
+   background-color: #fff;
    border-bottom: 1px solid black;
    position: fixed;
    width: 100%;
@@ -152,11 +165,12 @@ p {
 
 .main {
    margin: 150px 0px 0px 0px;
-   min-height: calc(100vh - 200px);
+   min-height: calc(100vh - 230px);
    /* flex: 15 1 auto; */
 }
 
 .footer {
+   margin: 30px 0px 0px 0px;
    flex: 1 1 50px;
    background-color: #333;
 }
