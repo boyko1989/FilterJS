@@ -25,9 +25,7 @@ if (!localStorage.getItem('myGoods')){
    // let arrGoods = [];
 
    for (let item in myData){
-      console.log(myData.S019188R);
-      console.log(myData.item);
-      console.log(typeof item);
+      console.log(myData[item]);
    }
 
    // console.log(myData.S019188R);
@@ -36,5 +34,3 @@ if (!localStorage.getItem('myGoods')){
    //    console.log(myDataArr);
    
 }
-
-
