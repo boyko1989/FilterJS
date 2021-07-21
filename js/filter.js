@@ -10,19 +10,13 @@ let contains = function (arr, elem) {
 }
 
 for (let item in myData){   
-
    let herBrand = myData[item].brand;
-
    let toPush = contains(brands,herBrand);
 
    if (!toPush) {
       brands.push(herBrand);
-   }
-   
+   }   
 }
-
-// console.log('Список брендов: ', brands);
-
 
 
 const selectBrand = document.getElementById('brand');
@@ -34,19 +28,5 @@ brands.forEach(element => {
 
    optionBrand.textContent = element;
    selectBrand.append(optionBrand);
-   
+
 });
-
-
-// for(let itemOptionText in brands) {
-
-//    let optionText = brands[itemOptionText];
-//    console.log(optionText);
-
-//    optionBrand.textContent = `${optionText}`;
-//    console.log(optionBrand);
-// }
-
-
-// console.log(optionSet);
-
