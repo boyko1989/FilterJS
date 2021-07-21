@@ -1,11 +1,67 @@
-/* .artikul{
-   
-} */
+.artikuls{
+   max-width: 1760px;
+}
+.artikul{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
 .cardGoodItem{
    padding: 30px;
    margin: 5px;
    border: 1px solid #333;
    border-radius: 5px;
-   float: left;
+   height: 750px;
+   flex: 1 1 320px;   
 }
 
+.Overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.952);
+   display: none;
+   z-index: 1000;
+}
+
+.active {
+   display: block;
+}
+
+/* !!!! Перераспределить свойства расположения и внешнего вида */
+
+.Overlay-icon__close{
+   position: absolute;
+   right: 32px;
+   top: 32px;
+   width: 32px;
+   height: 32px;
+   opacity: 0.3;
+}
+
+.icon__close::before,
+.icon__close::after{
+   position: absolute;
+   left: 15px;
+   content: ' ';
+   height: 33px;
+   width: 4px;
+   background-color: rgb(255, 255, 255);
+}
+
+.icon__close:before {
+   transform: rotate(45deg);
+}
+
+.icon__close:after {
+   transform: rotate(-45deg);
+}
+
+.Overlay-title{
+   margin-left: 50px;      
+   color: #fff;   
+}

@@ -1,0 +1,14 @@
+.panel {
+   display: flex;
+   flex-direction: row;
+}
+
+.panel-item{
+   margin: 0px 20px 0px 0px;
+   font-family: Arial;
+   text-transform: uppercase;
+}
+
+.panel-item>a {
+   color: rgb(96, 177, 96);
+}

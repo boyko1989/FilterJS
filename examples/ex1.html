@@ -6,14 +6,52 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Фильтрация карточек товаров</title>
-   <link rel="stylesheet" href="/css/style.css">
-   <link rel="stylesheet" href="/css/examples.css">
-   <script src="/js/script.js" defer></script>
-   <script src="/js/getdata.js" defer></script>
-   <script src="/js/filter.js" defer></script>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/examples.css">
+   <link rel="stylesheet" href="../css/panel.css">
+   <link rel="stylesheet" href="../css/filter.css">
+   <script src="../js/script.js" defer></script>
+   <script src="../js/getdata.js" defer></script>
+   <script src="../js/filter.js" defer></script>
 </head>
 
 <body>
+   <div class="Overlay">
+      <div class="Overlay-icon__close icon__close">
+         <span></span>
+      </div>
+      <div class="filter-panel">
+         <h4 class="filter-title">Фильтры</h4>
+
+         <div class="filter-panel__item">
+
+            <div class="filter-knob" id="filter-1__category">
+               <fieldset>
+                  <legend>Товары для:</legend>
+                  <div class="checkbox-btn-group">
+                     <label><input type="checkbox" name="men"><span>.. мужчин</span></label>
+                     <label><input type="checkbox" name="women"><span>.. женщин</span></label>
+                     <label><input type="checkbox" name="kids"><span>.. детей</span></label>
+                  </div>
+               </fieldset>
+            </div>
+
+            <div class="filter-knob" id="filter-1__brand">
+               <fieldset>
+                  <legend>Бренд</legend>
+                  <select id="brand"></select>
+               </fieldset>
+            </div>
+            <div class="filter-knob" id="filter-1__name"></div>
+            <div class="filter-knob" id="filter-1__color"></div>
+            <div class="filter-knob" id="filter-1__sizes"></div>
+            <div class="filter-knob" id="filter-3__cost"></div>
+         </div>
+
+
+      </div>
+
+   </div>
    <div class="wrapper">
       <header class="header">
 
@@ -33,16 +71,19 @@
          </div> <!-- Конец .header__menu-->
 
       </header>
-      <div class="container">
+      <article class="container">
          <main class="main">
             <h1>Фильтрация карточек товаров</h1>
+            <article class="panel">
+               <section class="panel-item filter"><a href="#" class="get-filter-panel">Фильтры</a></section>
+               <section class="panel-item sort"><a href="#" class="get-sort-panel">Сортировать по</a></section>
+            </article>
             <div class="artikuls">
                <ul class="artikul"></ul>
             </div>
-
          </main>
-      </div>
-      <footer class="footer"></footer>
+   </div>
+   <footer class="footer"></footer>
    </div>
 
 </body>

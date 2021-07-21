@@ -1,0 +1,140 @@
+fieldset{
+   border: 1px solid rgba(0, 0, 0, 0.082);
+   padding: 10px;
+
+   margin: 10px 0;
+}
+
+legend {
+   margin: 10px;
+   padding: 10px 0px 0px 0px;
+}
+
+label {
+   margin: 0 20px;
+   padding: 10px 0px 0px 0px;
+}
+
+.filter-panel {
+   max-width: 700px;
+   padding: 20px;
+   margin: 80px auto 0 auto;
+   background-color: rgb(173, 173, 173);
+   color: #000;
+   display: flex;
+   flex-direction:column;
+   justify-content: start;
+   align-items: center;
+   overflow: auto;
+}
+
+.filter-title{
+   margin: 0;
+   text-align: center;
+   color: #000;
+   padding: 10px 0px 5px 0px;
+}
+
+.filter-panel__item {
+   min-width: 100%;
+   border: 1px solid black;
+   padding: 0px 10px 5px 10px;
+   margin: 0px 0px 20px 0px;
+   font-family: Arial;
+}
+
+.filter-panel__item:last-child {
+   margin: 0px 0px 0px 0px;
+}
+
+.filter-knob {
+   margin: 5px;
+}
+
+/* чекбоксы группой кнопок */
+/* https: //snipp.ru/html-css/checkbox-buttons */
+
+.checkbox-btn-group {
+   display: inline-block;
+}
+
+.checkbox-btn-group:after {
+   content: "";
+   clear: both;
+   display: block;
+}
+
+.checkbox-btn-group label {
+   display: inline-block;
+   float: left;
+   margin: 0;
+   user-select: none;
+   position: relative;
+}
+
+.checkbox-btn-group input[type=checkbox] {
+   z-index: -1;
+   opacity: 0;
+   display: block;
+   width: 0;
+   height: 0;
+}
+
+.checkbox-btn-group span {
+   display: inline-block;
+   cursor: pointer;
+   padding: 0px 10px;
+   line-height: 30px;
+   border: 1px solid #000;
+   border-right: none;
+   /* transition: background 0.2s ease; */
+}
+
+.checkbox-btn-group label:first-child span {
+   border-radius: 4px 0 0 4px;
+}
+
+.checkbox-btn-group label:last-child span {
+   border-radius: 0 4px 4px 0;
+   border-right: 1px solid #000;
+}
+
+/* Checked */
+.checkbox-btn-group input[type=checkbox]:checked+span {
+   background: #a6ffbc;
+}
+
+/* Focus */
+.checkbox-btn-group .focused span {
+   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.568);
+}
+
+/* Hover */
+.checkbox-btn-group label:hover {
+   color: #666;
+}
+
+/* Active */
+.checkbox-btn-group input[type=checkbox]:active:not(:disabled)+span {
+   background: #d2c5ac;
+   color: #000;
+}
+
+/* Disabled */
+.checkbox-btn-group input[type=checkbox]:disabled+span {
+   background: #efefef;
+   color: rgb(56, 56, 56);
+   cursor: default;
+}
+
+.checkbox-btn-group input[type=checkbox]:checked:disabled+span {
+   background: #ffffff;
+}
+
+
+#filter-1__category {}
+#filter-1__brand {}
+#filter-1__name {}
+#filter-1__color {}
+#filter-1__sizes {}
+#filter-3__cos{}
